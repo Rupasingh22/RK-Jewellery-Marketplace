@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FAF7F0;
+    color: #121212;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars for luxury aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8C29A;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B89553;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B89553 0%, #E5D5B8 50%, #B89553 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(184, 149, 83, 0.3);
+}
+
+.gold-border-hover:hover {
+  border-color: rgba(184, 149, 83, 0.8);
+}
